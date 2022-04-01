@@ -6,7 +6,7 @@
     height: 21.25rem;
   }
 
-  > div {
+  >div {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -16,38 +16,36 @@
     display: flex;
     justify-content: center;
 
-    background: rgba(31, 34, 41, 0.5);
-
     .movie-info {
       max-width: 12.31rem;
       width: 100%;
-      
+
       display: flex;
       flex-direction: column;
-  
-      > span {
+
+      >span {
         font-weight: 600;
         font-size: 1rem;
         color: #fbfbfb;
-  
+
         margin-top: auto;
         margin-bottom: 0.5rem;
       }
-  
+
       .meta {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-  
+
         margin-bottom: 1rem;
-  
+
         div {
           display: flex;
           align-items: center;
-  
+
           font-weight: 600;
           color: var(--gray);
-  
+
           svg {
             color: #FAE800;
             margin-right: 0.5rem;
@@ -55,5 +53,17 @@
         }
       }
     }
+  }
+}
+
+.movie-card:hover {
+  img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s
   }
 }
